@@ -50,18 +50,11 @@ CabinRow.propTypes = {
 };
 
 function CabinRow({ cabin }) {
-  const {
-    id,
-    name,
-    max_capacity: maxCapacity,
-    regular_price: regularPrice,
-    discount,
-    image,
-  } = cabin;
+  const { id, name, maxCapacity, regularPrice, discount, image } = cabin;
 
   const queryClient = useQueryClient();
 
-  const { isLoading: isDeleting, mutate: deleteCabinMutation } = useMutation({
+  const { mutate: deleteCabinMutation, isLoading: isDeleting } = useMutation({
     mutationFn: deleteCabin,
     onSuccess: () => {
       toast.success("Cabin successfully deleted");
