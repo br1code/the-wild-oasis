@@ -1,5 +1,8 @@
 # The Wild Oasis
 
+> [!IMPORTANT] 
+> 11/12/2023: The development of this project has been suspended in order to continue studying other topics with higher priority.
+
 Developed for the purpose of reviewing React ([see Udemy course](https://www.udemy.com/course/the-ultimate-react-course/))
 
 ## Requirements
